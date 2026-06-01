@@ -23,7 +23,7 @@ def ask_llm(prompt: str):
         ],
         "temperature": 0
     }
-    print(OPENROUTER_API_KEY)
+   
 
     response = requests.post(url, headers=headers, json=payload)
     response.raise_for_status()
