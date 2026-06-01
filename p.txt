@@ -1,0 +1,15 @@
+__init__.py → just leave it empty for now (it marks the folder as a Python package).
+
+google_retriever.py → focus here first; it will fetch articles for a claim.
+
+Input: claim/headline
+
+Output: list of articles (title, snippet, link)
+
+After you confirm fetching works, move to preprocess.py to clean the text.
+
+Then embedder.py → turn text → vectors.
+
+vector_store.py → store embeddings, enable top-k search.
+
+retriever_pipeline.py → chain all above together (claim → top-k evidence).
