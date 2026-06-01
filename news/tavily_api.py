@@ -1,7 +1,12 @@
+import os
 import requests
+from dotenv import load_dotenv
 
-API_KEY = "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"
-URL = "https://api.tavily.com/search"
+load_dotenv()
+
+API_KEY = os.getenv("TAVILY_API_KEY")
+URL = os.getenv("TAVILY_URL")
+
 
 def tavily_search(query: str):
     payload = {
